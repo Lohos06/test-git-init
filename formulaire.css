@@ -1,0 +1,8 @@
+input {
+    border-width: 1px;
+    writing-mode: horizontal-tb;
+}
+
+.vide {
+    border-bottom-color: red;
+}

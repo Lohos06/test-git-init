@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="formulaire.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Quelles sont tes couleurs preferées ?</legend>
+
+                <input type="text" name="color1" id="color1" placeholder="1ere couleur preferée" required>
+                <input type="text" name="color2" id="color2" placeholder="2eme couleur preferée" required>
+                <input type="text" name="color3" id="color3" placeholder="3eme couleur preferée" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Renseigner deux nombre</legend>
+
+                <input type="number" name="number1" id="number1" placeholder="number 1" required>
+                <input type="number" name="number2" id="number2" placeholder="number 2" required>
+
+                <input type="button" name="button" id="button" value="Resultat du match">
+
+                <p id="resultat"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Met un nombre stp</legend>
+
+                <input type="number" name="number" id="number">
+            </fieldset>
+
+            <input type="submit" id="submit" value="Soumettre">
+        </form>
+    </main>
+</body>
+
+<script src="formulaire.js"></script>
+
+</html>
