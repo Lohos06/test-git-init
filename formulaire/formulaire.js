@@ -4,12 +4,12 @@ let color1 = document.getElementById('color1');
 let color2 = document.getElementById('color2');
 let color3 = document.getElementById('color3');
 
+const resultatCouleur = document.getElementById('resultatCouleur')
+
 submit.addEventListener('click', (e) => {
     e.preventDefault();
 
-    console.log(color1.value);
-    console.log(color2.value);
-    console.log(color3.value);
+    resultatCouleur.innerHTML = "your first color is " + color1.value + ", your second is " + color2.value + " and your third is " + color3.value
 });
 
 const number1 = document.getElementById('number1');
@@ -24,17 +24,19 @@ button.addEventListener('click', () => {
     } else if (number2.value > number1.value) {
         resultat.innerHTML = "number 2 is the greatest";
     } else {
-        resultat.innerHTML = "les deux sont identiques";
+        resultat.innerHTML = "why trying to compare with the same thing ?";
     }
 });
 
 const number = document.getElementById('number');
+const noNumber = document.getElementById('noNumber')
 
 number.addEventListener('blur', () => {
     if (number.value == "") {
-        console.log('met un nombre stp');
+        noNumber.innerHTML = 'met un nombre stp';
         number.classList.add('vide');
     } else {
+        noNumber.innerHTML = '';
         number.classList.remove('vide');
     }
 })
